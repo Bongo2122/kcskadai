@@ -1,0 +1,331 @@
+﻿#container
+{
+  margin: 0px auto; 			/*中央揃え　一番上から*/
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+/*ヘッダー*/
+#header
+{
+  content: "";
+  clear: both;
+}    
+#header h1 a
+{
+  text-decoration: none;
+  color: #000000;
+}
+#today
+{
+  float: right;
+  color: #999999;
+  margin: 0;
+}
+#header:after
+{
+  content: "";
+  clear: both;
+}
+
+/*メニュー*/
+#nav
+{
+  padding: 0;
+  content: "";
+  clear: both;
+}
+/*メニュー設定*/
+/*メニュー(縦並び)*/
+#nav ul
+{
+  margin: 0;
+  padding: 10px 0px;
+  list-style: none;
+  border-top: 1px solid #dddddd;/*上の線*/
+}
+#nav ul li
+{
+  float: left;
+  padding: 0px 5px;
+  width: 195px;
+  color: #000000; /*色を黒色に*/
+  font-size: 14px; /*フォントを14pxに*/
+  text-align: center;/*文字を中央に*/
+  border-right:1px solid #dddddd;	/*線を引く solid:細い線*/
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#nav ul li:last-child 
+{
+/*リストの最後の線を消す ?*/
+  border: 0px;
+}
+#nav li a
+{
+  padding: 5px 0;
+  text-decoration: none;
+  display: block;
+  color: #000000;
+}
+#nav ul:after
+{
+  display: block;
+  content:  "";
+  clear: both;
+}
+#nav li a:hover
+{
+  background-color: #dddddd;
+}
+#nav:after
+{
+  content: "";
+  clear: both;
+}
+.
+/*コンテンツ*/
+#content
+{
+  content: "";
+  clear: both;
+}
+#content:after
+{
+  content: "";
+  clear: both;
+}
+
+/*メインコンテンツ*/
+.mainContent
+{
+  content:  "";
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mainContent:after
+{
+  content:  "";
+  clear: both;
+}
+
+
+/*メイン写真*/
+.main
+{
+  content:  "";
+  clear: both; 
+  border-bottom:2px solid #bbbbbb;	/*線を引く solid:細い線*/
+  padding: 0px 0px 5px 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.main img
+{
+
+  max-width: 100%;
+  height: auto;
+}
+.main:after
+{
+  content:  "";
+  clear: both;
+}
+
+/*お気に入り*/
+.myFavorite
+{
+  content:  "";
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*お気に入りの配置*/
+.mise
+{
+  float: left;
+  width: 322px;
+  height: 520px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mise a
+{
+  color: #918D40;
+  
+}
+.more a
+{ 
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+.more
+{ 
+  display: inline-block; 
+  padding: 5px 15px;
+  background-color: #918D40;  
+}
+
+.peri,.soldier
+{
+  margin: 0px 7px 0px 0px;
+}
+.myFavorite:after
+{
+  display: block;
+  content:  "";
+  clear: both;
+}
+
+/*人気*/
+.popular
+{
+  border-top:2px solid #bbbbbb;	/*線を引く solid:細い線*/
+  border-bottom:2px solid #bbbbbb;	/*線を引く solid:細い線*/
+  list-style: none;
+  content:  "";
+  clear: both;
+}
+.popular h2
+{
+  margin: 5px 0px;
+}
+.popular ul
+{
+  padding: 0;
+  list-style: none;
+  content:  "";
+  clear: both;
+}
+.popular ul li
+{
+  border-bottom:1px solid #dddddd;	/*線を引く solid:細い線*/
+  height: 30px;
+  margin: 2px;
+  content:  "";
+  clear: both;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.popular ul li img
+{ 
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 60px;
+}
+.popular ul li a
+{ 
+  text-decoration: none;
+  color: #000000;
+}
+.popular ul li a p
+{ 
+  margin: 0px 0px 0px 0px;
+}
+.popular li:hover
+{
+  background-color: #dddddd;
+}
+.popular:after
+{
+  content:  "";
+  clear: both;
+}
+
+/*お知らせ*/
+.information
+{
+  content:  "";
+  clear: both;
+}
+
+.information:after
+{
+  content:  "";
+  clear: both;
+}
+
+#copyright a
+{
+  color: #918D40;
+  
+}
+
+.current
+{
+  background-color: #dddddd;
+}
+
+/*時間*/
+.time {
+	float: right;
+	font-size: 12px;
+}
+
+/*レスポンシブ*/
+/*599以下*/  
+@media (max-width: 599px)
+{
+  #container
+  {
+    width:  auto;
+    margin: 0px auto; 			/*中央揃え　一番上から*/
+  }
+  .main
+  {
+    width: auto; 
+    height: auto;
+  }
+  .mise:after
+  {
+    content:  "";
+    clear: both;
+  }
+}
+/*600以上～767以下*/
+@media(min-width: 600px) and (max-width: 767px)
+{
+  #container
+  {
+    width:  auto;
+  }
+  .main
+  {
+    width: auto; 
+    height: auto;
+  }
+  .mise:after
+  {
+    content:  "";
+    clear: both;
+  }
+}
+
+/*1040以上*/
+@media(min-width: 1040px)
+{
+  #container
+  {
+    width:  980px;
+    margin: 0px auto; 			/*中央揃え　一番上から*/
+  }
+  .main
+  {
+    width: auto; 
+    height: auto;
+  }
+}
